@@ -5,7 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+     body {background-color: rgba(235, 208, 10, 0.907);}
+</style>
 <body>
-    <h1>RESERVAS</h1>
-</body>
+     
+    <form action="procesa.php">
+    <h1>Haga su reserva</h1>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+            <label for="nombre">Nombre</label>
+                    <input type="text" maxlength="100" 
+                    name="nombre" required
+                    placeholder="Escriba aqui su nombre completo"
+                    id="nombre">
+        </p>
+        <p>
+            <label for="ape">Apellidos</label>
+                    <input type="text" maxlength="100" 
+                    name="ape" required
+                    placeholder="Escriba aqui sus apellidos completo"
+                    id="ape">
+        </p>
+        <p>
+            <label for="dni">DNI</label>
+                    <input type="text" maxlength="10" 
+                    name="dni" required
+                    placeholder="DNI con letra"
+                    id="dno">
+        </p>
+        </fieldset>
+            <h3>Elija el tipo de habitacion</h3>
+        <fieldset>
+            <legend>Datos de su estancia</legend>
+        <p>
+            <label for="Individual">Individual</label>
+                <input type="radio"
+                        value="I"
+                        checked 
+                        id="Habitacion"
+                        name="Habitacion">
+             <label for="Doble">Doble</label>
+                <input type="radio"
+                        value="D"
+                        id="Doble"
+                        name="Habitacion">
+            <label for="Triple">Triple</label>
+                <input type="radio"
+                        value="T"
+                        id="Triple"
+                        name="Habitacion">
+            </p>
+           
+            <label for="np">Indique el numero de personas</label>
+            <select name="np" id="np">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3" >3</option>
+                    </select>
+            <p>
+                <label for="mas">Llevo Mascotas</label>
+                <input type="checkbox" name="mas" id="mas">
+            </p>
+            <p>
+                <label for="fll">Fecha de Llegada</label>
+                <input type="date" name="f" id="fll">
+             </p>
+            <p>
+                <label for="h">Hora de Llegada</label>
+                <input type="time" name="t" id="h">
+            </p>
+        </fieldset>
+        <p>
+         <input type="submit" value="Enviar Datos">
+                <input type="reset" name="reiniciar">
+         </p>
+         <p>
+<a href="index.html">volver</a>
+        
+         </p>
+        
+        </form>
+        </body>
+       
+
 </html>
